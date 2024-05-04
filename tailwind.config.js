@@ -14,15 +14,18 @@ module.exports = {
       },
       colors: {
         'dark-blue': '#2A324B',
-        'yellow': '#FFC857'
+        'yellow': '#FFC857',
+        'white': '#FFFFFF',
+        'darkgreen': '#173430',
+        'lightgreen': '#19B888',
       },
       fontFamily: {
-        'Montserrat': ['Montserrat', 'sans-serif'],
-        'Montserrat-Light': ['Montserrat-Light', 'sans-serif'],
-        'Montserrat-Regular': ['Montserrat-Regular', 'sans-serif'],
-        'Montserrat-Medium': ['Montserrat-Medium', 'sans-serif'],
-        'Montserrat-Bold': ['Montserrat-Bold', 'sans-serif'],
         inter: ["Inter", "sans-serif"],
+        'zen-regular': ['ZenKakuGo-Regular', 'sans-serif'],
+        'zen-medium': ['ZenKakuGo-Medium', 'sans-serif'],
+        'zen-bold': ['ZenKakuGo-Bold', 'sans-serif'],
+        'zen-light': ['ZenKakuGo-Light', 'sans-serif'],
+        'zen-black': ['ZenKakuGo-Black', 'sans-serif'],
       }
     },
   },
