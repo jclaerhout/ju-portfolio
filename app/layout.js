@@ -1,7 +1,5 @@
-import { Inter } from "next/font/google";
-import "./styles/globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import "../styles/globals.css";
+import Nav from "./nav";
 
 export const metadata = {
   title: "Julien Claerhout",
@@ -10,8 +8,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="fr">
+      <body>
+        <Nav />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
