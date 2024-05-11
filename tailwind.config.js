@@ -19,6 +19,7 @@ module.exports = {
         'white': '#FFFFFF',
         'darkgreen': '#173430',
         'lightgreen': '#19B888',
+        'softgrey': '#F6F7F7',
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
