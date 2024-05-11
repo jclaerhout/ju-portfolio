@@ -1,8 +1,9 @@
+import Image from "next/image";
+
 function Portfolio() {
   return (
-    <div>
-      <h1>Portfolio</h1>
-      // Ajoutez ici le contenu de votre page Portfolio
+    <div className="flex items-center justify-center">
+      <Image src="/images/work-in-progress.png" alt="Portfolio" width={150} height={150} />
     </div>
   );
 }

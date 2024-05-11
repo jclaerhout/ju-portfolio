@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function Nav() {
     return (
-        <nav className="flex items-center justify-center mt-10">
+        <nav className="flex items-center justify-center mt-5">
             <Button href="/">Acceuil</Button>
             <Button href="/portfolio">Portfolio</Button>
             <Button href="/cv">CV</Button>

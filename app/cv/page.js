@@ -1,8 +1,11 @@
+import Image from "next/image";
+
 function CV() {
   return (
-    <div>
-      <h1>CV</h1>
-      // Ajoutez ici le contenu de votre page CV
+    <div className="flex items-center justify-center bg-gray-100">
+      <div className="w-full sm:w-1/2 border-4 border-cv-blue p-2 rounded-lg">
+        <Image layout="responsive" width={2482} height={3510} src="/images/CV.jpg" alt="CV" />
+      </div>
     </div>
   );
 }
