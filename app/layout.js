@@ -1,6 +1,6 @@
 import "../styles/globals.css";
-import Nav from "./Nav";
-import Footer from "./Footer";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 export const metadata = {
   title: "Julien Claerhout",
