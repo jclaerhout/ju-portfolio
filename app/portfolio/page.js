@@ -42,24 +42,24 @@ function Portfolio() {
           </tr>
           <tr className="text-center items-center justify-center border-b border-gray-300">
             <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">3</td>
-            <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">Shooting photo pour une bijouterie</td>
-            <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">Job étudiant</td>
-            <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">40</td>
-            <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">10</td>
-            <td>
-              <Button href="/portfolio/photo">
-                <FaArrowRight className="mx-auto" />
-              </Button>
-            </td>
-          </tr>
-          <tr className="text-center items-center justify-center border-b border-gray-300">
-            <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">4</td>
             <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">Serveur cloud perso sur raspberryPi</td>
             <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">Projet perso</td>
             <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">22</td>
             <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">10</td>
             <td>
               <Button href="/portfolio/pi">
+                <FaArrowRight className="mx-auto" />
+              </Button>
+            </td>
+          </tr>
+          <tr className="text-center items-center justify-center border-b border-gray-300">
+            <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">4</td>
+            <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">Shooting photo pour une bijouterie</td>
+            <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">Job étudiant</td>
+            <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">40</td>
+            <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">10</td>
+            <td>
+              <Button href="/portfolio/photo">
                 <FaArrowRight className="mx-auto" />
               </Button>
             </td>

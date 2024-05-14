@@ -11,7 +11,7 @@ function Footer() {
           <Image width={32} height={32} src="/images/footer/linkedin-icon.png" alt="LinkedIn" />
         </a>
         <a href="https://www.instagram.com/juphoto_/" target="_blank" rel="noopener noreferrer">
-          <Image width={32} height={32} src="/images/instagram-icon.png" alt="Instagram" />
+          <Image width={32} height={32} src="/images/footer/instagram-icon.png" alt="Instagram" />
         </a>
         <a href="mailto:julienclaerhout@gmail.com" target="_blank" rel="noopener noreferrer">
           <Image width={32} height={32} src="/images/footer/mail-icon.png" alt="Mail" />

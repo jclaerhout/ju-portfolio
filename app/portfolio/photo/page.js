@@ -42,7 +42,7 @@ const Page = () => {
             </p>
             <h1 className="text-2xl md:text-4xl text-darkgreen font-bold my-4 md:my-8">Preuves</h1>
             <div className="border-2 border-darkgreen px-8 py-8 rounded-3xl overflow-hidden">
-                <div className="flex justify-between items-center space-x-4 md:space-x-8 my-4 md:my-8">
+                <div className="flex flex-col-reverse md:flex-row justify-between items-center space-y-4 md:space-x-8 my-4 md:my-8">
                     <p className="text-darkgreen text-xl text-center font-zen-bold">
                         Publication Instagram de la bijouterie<br />
                         qui mentionne mon nom dans l'encadré rouge.<br />
