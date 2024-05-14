@@ -29,6 +29,11 @@ function Home() {
             Je ressens le besoin constant d'approfondir mes connaissances pour gagner en crédibilité professionnelle.
           </p>
           <p className="text-lg text-justify font-zen-medium text-darkgreen py-4 px-8">
+            Outre ma passion pour l'informatique, je nourris également un intérêt profond pour la photographie, qui pour l'instant demeure un hobby. 
+            Toutefois, j'envisage de la professionnaliser à l'avenir, avec l'ambition d'en faire un second métier. 
+            Vous pouvez retrouver une partie de mon travail photographique sur mon compte Instagram, accessible via le lien dans le footer de ce portfolio 😉.
+          </p>
+          <p className="text-lg text-justify font-zen-medium text-darkgreen py-4 px-8">
             D'après un test de compétences "onStage" axé sur les soft skills, mes points forts incluent la capacité à valoriser mes idées, 
             à planifier et gérer efficacement, à repérer des opportunités, ainsi qu'à faire preuve de motivation et de persévérance. 
             Cependant, un point faible majeur se dégage, qui nécessite une amélioration générale de ma communication avec autrui.

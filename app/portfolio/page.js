@@ -1,4 +1,5 @@
 import { Button } from '../components/utils';
+import { FaArrowRight } from 'react-icons/fa';
 
 function Portfolio() {
   return (
@@ -22,7 +23,9 @@ function Portfolio() {
             <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">22</td>
             <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">10</td>
             <td>
-              <Button href="/portfolio/symfony">Détails</Button>
+              <Button href="/portfolio/symfony">
+                <FaArrowRight className="mx-auto" />
+              </Button>
             </td>
           </tr>
           <tr className="text-center items-center justify-center border-b border-gray-300">
@@ -32,17 +35,21 @@ function Portfolio() {
             <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">13</td>
             <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">10</td>
             <td>
-              <Button href="/portfolio/C">Détails</Button>
+              <Button href="/portfolio/C">
+                <FaArrowRight className="mx-auto" />
+              </Button>
             </td>
           </tr>
           <tr className="text-center items-center justify-center border-b border-gray-300">
             <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">3</td>
             <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">Shooting photo pour une bijouterie</td>
-            <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">Student job</td>
-            <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">15</td>
+            <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">Job étudiant</td>
+            <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">40</td>
             <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">10</td>
             <td>
-              <Button href="/portfolio/photo">Détails</Button>
+              <Button href="/portfolio/photo">
+                <FaArrowRight className="mx-auto" />
+              </Button>
             </td>
           </tr>
           <tr className="text-center items-center justify-center border-b border-gray-300">
@@ -52,7 +59,9 @@ function Portfolio() {
             <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">22</td>
             <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">10</td>
             <td>
-              <Button href="/portfolio/pi">Détails</Button>
+              <Button href="/portfolio/pi">
+                <FaArrowRight className="mx-auto" />
+              </Button>
             </td>
           </tr>
           <tr className="text-center items-center justify-center border-b border-gray-300">
@@ -62,7 +71,9 @@ function Portfolio() {
             <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">[A compléter]</td>
             <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">[A compléter]</td>
             <td>
-              <Button href="/portfolio/">Détails</Button>
+              <Button href="/portfolio/">
+                <FaArrowRight className="mx-auto" />
+              </Button>
             </td>
           </tr>
           <tr className="text-center items-center justify-center">
@@ -72,7 +83,9 @@ function Portfolio() {
             <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">[A compléter]</td>
             <td className="px-2 sm:px-4 py-2 text-sm text-darkgreen font-zen-medium">[A compléter]</td>
             <td>
-              <Button href="/portfolio/">Détails</Button>
+              <Button href="/portfolio/">
+                <FaArrowRight className="mx-auto" />
+              </Button>
             </td>
           </tr>
         </tbody>
