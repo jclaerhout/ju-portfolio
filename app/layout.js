@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react"
 import "../styles/globals.css";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
         <Nav className="fixed top-0 w-full z-50 bg-white" />
         <main className="flex-grow pt-12 pb-16">{children}</main>
         <Footer className="fixed bottom-0 w-full z-50 bg-white" />
+        <Analytics />
       </body>
     </html>
   );
