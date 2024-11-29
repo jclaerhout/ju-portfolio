@@ -1,101 +1,90 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <main className="bg-secondary text-textDark min-h-screen">
+      <section className="flex flex-col items-center justify-center text-center pt-10 pb-20 bg-primary text-white">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          src="/images/profile.jpg"
+          alt="Profile photo of Julien Claerhout"
+          width={128}
+          height={128}
+          className="mb-5 rounded-full mx-auto"
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+        <h1 className="text-4xl font-bold">Welcome to My Portfolio</h1>
+        <p className="mt-4 text-lg">
+          I am <span className="font-semibold">Julien Claerhout</span>, an aspiring network engineer passionate about IT infrastructure and cybersecurity.
+        </p>
+        <div className="flex mt-6 space-x-4">
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="docs/CV-intern-networking.pdf"
+            className="px-6 py-3 bg-accent text-white rounded shadow hover:bg-accent/90 transition"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+            Download My CV
           </a>
           <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://www.linkedin.com/in/julien-claerhout"
             target="_blank"
             rel="noopener noreferrer"
+            className="px-6 py-3 bg-white text-primary rounded shadow hover:bg-gray-200 transition"
           >
-            Read our docs
+            My LinkedIn
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </section>
+
+      {/* About Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-primary">About Me</h2>
+          <p className="mt-4 text-lg">
+            I am a recent graduate in Computer Science with a strong foundation in IT acquired during my Bachelor's studies at EPHEC. Currently pursuing a CCNA certification, I am specializing in networking, with hands-on experience in configuring routers, switches, VLANs, and network security protocols. Passionate about IT infrastructure, I am actively seeking an internship to apply my skills and gain practical experience in network engineering.
+            Beyond networking, I have experience with Docker, Linux/Windows administration, Python scripting, and virtualization technologies, making me a versatile IT professional ready to take on new challenges.
+          </p>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section className="py-20 px-6 bg-gray-100">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-primary">Personal Projects</h2>
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Artify */}
+            <div className="bg-white shadow-md rounded-lg p-6">
+              <h3 className="text-xl font-bold text-accent">Artify 🎨🎶</h3>
+              <p className="mt-2">
+                A web application that provides AI-powered music recommendations based on Spotify API.
+              </p>
+              <a
+                href="https://www.artify-app.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-4 text-primary underline hover:text-accent"
+              >
+                View Project
+              </a>
+            </div>
+            {/* Future Project Slot */}
+            <div className="bg-gray-200 rounded-lg flex items-center justify-center">
+              <p className="text-gray-600 italic">More projects coming soon...</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-6 bg-primary text-white text-center">
+        <div className="flex justify-center space-x-4">
+          <a href="https://github.com/jclaerhout" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/julien-claerhout" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
+          <a href="mailto:julienclaerhout@gmail.com">E-mail</a>
+        </div>
+        <p className="mt-4 text-sm">&copy; 2024 Julien Claerhout. All rights reserved.</p>
       </footer>
-    </div>
+    </main>
   );
 }
