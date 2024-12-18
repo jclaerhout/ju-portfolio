@@ -133,18 +133,18 @@ export default function Home() {
           <p className="mt-4 text-lg text-textDark">Here are my Cisco Badges:</p>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Badge 1 */}
-            <div className="bg-white shadow-md rounded-lg p-6">
+            <a href="https://www.credly.com/badges/bca68411-10ae-4a8b-9759-f8b8eaea05ad/public_url" target="_blank" className="bg-white shadow-md rounded-lg p-6 transform transition-transform duration-300 hover:scale-105">
               <Image
-                src="/images/ccna-introduction-to-networks.png"
-                alt="CCNA: Introduction to Networks"
+                src="/images/ccna-enterprise-networking-security-and-automation.png"
+                alt="CCNA: Enterprise Networking, Security, and Automation"
                 width={150}
                 height={150}
                 className="mx-auto"
               />
-              <h3 className="text-xl font-bold text-primary mt-4">CCNA: Introduction to Networks</h3>
-            </div>
+              <h3 className="text-xl font-bold text-primary mt-4">CCNA: Enterprise Networking, Security, and Automation</h3>
+            </a>
             {/* Badge 2 */}
-            <div className="bg-white shadow-md rounded-lg p-6">
+            <a href="https://www.credly.com/badges/a8696993-f9dc-4bbf-974e-6ec4bad421b2/public_url" target="_blank" className="bg-white shadow-md rounded-lg p-6 transform transition-transform duration-300 hover:scale-105">
               <Image
                 src="/images/ccna-switching-routing-and-wireless-essentials.png"
                 alt="CCNA: Switching, Routing & Wireless Essentials"
@@ -153,9 +153,20 @@ export default function Home() {
                 className="mx-auto"
               />
               <h3 className="text-xl font-bold text-primary mt-4">CCNA: Switching, Routing & Wireless Essentials</h3>
-            </div>
+            </a>
             {/* Badge 3 */}
-            <div className="bg-white shadow-md rounded-lg p-6">
+            <a href="https://www.credly.com/badges/0a86a040-0802-4b75-b326-ef44f04ed330/public_url" target="_blank" className="bg-white shadow-md rounded-lg p-6 transform transition-transform duration-300 hover:scale-105">
+              <Image
+                src="/images/ccna-introduction-to-networks.png"
+                alt="CCNA: Introduction to Networks"
+                width={150}
+                height={150}
+                className="mx-auto"
+              />
+              <h3 className="text-xl font-bold text-primary mt-4">CCNA: Introduction to Networks</h3>
+            </a>
+            {/* Badge 4 */}
+            <a href="https://www.credly.com/badges/bca68411-10ae-4a8b-9759-f8b8eaea05ad/public_url" target="_blank" className="bg-white shadow-md rounded-lg p-6 transform transition-transform duration-300 hover:scale-105">
               <Image
                 src="/images/networking-basics.png"
                 alt="Networking Basics"
@@ -164,7 +175,7 @@ export default function Home() {
                 className="mx-auto"
               />
               <h3 className="text-xl font-bold text-primary mt-4">Networking Basics</h3>
-            </div>
+            </a>
           </div>
         </div>
       </section>
