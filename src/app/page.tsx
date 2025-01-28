@@ -2,9 +2,9 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="bg-secondary text-textDark min-h-screen">
+    <main className="bg-gradient-to-b from-secondary via-white to-secondary text-textDark min-h-screen">
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center text-center pt-10 pb-20 bg-primary text-white">
+      <section className="flex flex-col items-center justify-center text-center pt-10 pb-20 bg-gradient-to-r from-primary to-accent text-white">
         <Image
           src="/images/profile.jpg"
           alt="Profile photo of Julien Claerhout"
@@ -14,7 +14,7 @@ export default function Home() {
         />
         <h1 className="text-4xl font-bold">Welcome to My Portfolio</h1>
         <p className="mt-4 text-lg">
-          I am <span className="font-semibold">Julien Claerhout</span>, an aspiring network engineer passionate about IT infrastructure and cybersecurity.
+          I am <span className="font-semibold">Julien Claerhout</span>, a certified network administrator passionate about IT infrastructure and cybersecurity.
         </p>
         <div className="flex mt-6 space-x-4">
           <a
@@ -35,26 +35,57 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="py-20 px-6">
+      <section className="py-20 px-6 bg-gradient-to-r from-white to-gray-100">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-primary">About Me</h2>
           <p className="mt-4 text-lg">
-            I am a recent graduate in Computer Science with a strong foundation in IT acquired during my Bachelor&apos;s studies at EPHEC. Currently pursuing a CCNA certification, I am specializing in networking, with hands-on experience in configuring routers, switches, VLANs, and network security protocols. Passionate about IT infrastructure, I am actively seeking an internship to apply my skills and gain practical experience in network engineering.
-            Beyond networking, I have experience with Docker, Linux/Windows administration, Python scripting, and virtualization technologies, making me a versatile IT professional ready to take on new challenges.
+            I am a recent graduate in Computer Science with a solid foundation in IT acquired during my Bachelor&apos;s studies at EPHEC. Proud holder of the CCNA certification from Cisco, I specialize in networking with hands-on experience in configuring routers, switches, VLANs, and implementing network security protocols. Currently working as a Network Administrator intern at the RTBF, I am dedicated to applying and expanding my expertise in IT infrastructure.
+            Beyond networking, I have experience with Docker, Linux/Windows administration, Python scripting, web and mobile development, and virtualization technologies, making me a versatile IT professional ready to tackle complex challenges.
           </p>
         </div>
       </section>
 
+      {/* Certifications Section */}
+      <section className="py-20 px-6 bg-gradient-to-r from-accent via-primary to-accent text-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold">Certifications</h2>
+          <div className="mt-10 flex justify-center">
+            <a
+              href="https://www.credly.com/badges/a674301e-8cc2-4f89-aeff-407012af1ae3/public_url"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white shadow-md rounded-3xl p-6 transform transition-transform duration-300 hover:scale-105 text-center text-primary"
+            >
+              <Image
+                src="/images/ccna-badge.jpg"
+                alt="CCNA Certification Badge"
+                width={200}
+                height={200}
+                className="mx-auto"
+              />
+              <h3 className="text-xl font-bold mt-4">Cisco Certified Network Associate (CCNA)</h3>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Career Timeline Section */}
-      <section className="py-20 px-6 bg-gray-100">
+      <section className="py-20 px-6 bg-gradient-to-r from-gray-100 to-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-primary text-center mb-10">Career Timeline</h2>
           <div className="space-y-6">
             <div className="flex items-start">
               <span className="w-6 h-6 bg-accent rounded-full flex-shrink-0"></span>
               <div className="ml-4">
-                <h3 className="text-xl font-semibold">Early 2025</h3>
-                <p className="text-textDark">Start a professional internship in networking.</p>
+                <h3 className="text-xl font-semibold">January - April 2025</h3>
+                <p className="text-textDark">Interning as a Network Administrator at the RTBF.</p>
+              </div>
+            </div>
+            <div className="flex items-start">
+              <span className="w-6 h-6 bg-accent rounded-full flex-shrink-0"></span>
+              <div className="ml-4">
+                <h3 className="text-xl font-semibold">January 2025</h3>
+                <p className="text-textDark">Achieved Cisco Certified Network Associate (CCNA) certification.</p>
               </div>
             </div>
             <div className="flex items-start">
@@ -98,88 +129,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section className="py-20 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-primary">Personal Projects</h2>
-          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Artify */}
-            <div className="bg-white shadow-md rounded-lg p-6">
-              <h3 className="text-xl font-bold text-accent">Artify 🎨🎶</h3>
-              <p className="mt-2">
-                A web application that provides AI-powered music recommendations based on Spotify API.
-              </p>
-              <a
-                href="https://www.artify-app.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mt-4 text-primary underline hover:text-accent"
-              >
-                View Project
-              </a>
-            </div>
-            {/* Future Project Slot */}
-            <div className="bg-gray-200 rounded-lg flex items-center justify-center">
-              <p className="text-gray-600 italic">More projects coming soon...</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Certifications Section */}
-      <section className="py-20 px-6 bg-gray-100">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-primary">Certifications</h2>
-          <p className="mt-4 text-lg text-textDark">Here are my Cisco Badges:</p>
-          <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Badge 1 */}
-            <a href="https://www.credly.com/badges/bca68411-10ae-4a8b-9759-f8b8eaea05ad/public_url" target="_blank" className="bg-white shadow-md rounded-lg p-6 transform transition-transform duration-300 hover:scale-105">
-              <Image
-                src="/images/ccna-enterprise-networking-security-and-automation.png"
-                alt="CCNA: Enterprise Networking, Security, and Automation"
-                width={150}
-                height={150}
-                className="mx-auto"
-              />
-              <h3 className="text-xl font-bold text-primary mt-4">CCNA: Enterprise Networking, Security, and Automation</h3>
-            </a>
-            {/* Badge 2 */}
-            <a href="https://www.credly.com/badges/a8696993-f9dc-4bbf-974e-6ec4bad421b2/public_url" target="_blank" className="bg-white shadow-md rounded-lg p-6 transform transition-transform duration-300 hover:scale-105">
-              <Image
-                src="/images/ccna-switching-routing-and-wireless-essentials.png"
-                alt="CCNA: Switching, Routing & Wireless Essentials"
-                width={150}
-                height={150}
-                className="mx-auto"
-              />
-              <h3 className="text-xl font-bold text-primary mt-4">CCNA: Switching, Routing & Wireless Essentials</h3>
-            </a>
-            {/* Badge 3 */}
-            <a href="https://www.credly.com/badges/0a86a040-0802-4b75-b326-ef44f04ed330/public_url" target="_blank" className="bg-white shadow-md rounded-lg p-6 transform transition-transform duration-300 hover:scale-105">
-              <Image
-                src="/images/ccna-introduction-to-networks.png"
-                alt="CCNA: Introduction to Networks"
-                width={150}
-                height={150}
-                className="mx-auto"
-              />
-              <h3 className="text-xl font-bold text-primary mt-4">CCNA: Introduction to Networks</h3>
-            </a>
-            {/* Badge 4 */}
-            <a href="https://www.credly.com/badges/bca68411-10ae-4a8b-9759-f8b8eaea05ad/public_url" target="_blank" className="bg-white shadow-md rounded-lg p-6 transform transition-transform duration-300 hover:scale-105">
-              <Image
-                src="/images/networking-basics.png"
-                alt="Networking Basics"
-                width={150}
-                height={150}
-                className="mx-auto"
-              />
-              <h3 className="text-xl font-bold text-primary mt-4">Networking Basics</h3>
-            </a>
-          </div>
-        </div>
-      </section>
-
       {/* Footer */}
       <footer className="py-6 bg-primary text-white text-center">
         <div className="flex justify-center space-x-4">
@@ -208,7 +157,7 @@ export default function Home() {
             E-mail
           </a>
         </div>
-        <p className="mt-4 text-sm">&copy; 2024 Julien Claerhout. All rights reserved.</p>
+        <p className="mt-4 text-sm">&copy; 2025 Julien Claerhout. All rights reserved.</p>
       </footer>
     </main>
   );
