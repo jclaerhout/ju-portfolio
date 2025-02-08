@@ -18,7 +18,8 @@ export default function Home() {
         </p>
         <div className="flex mt-6 space-x-4">
           <a
-            href="docs/CV-intern-networking.pdf"
+            href="docs/CV.pdf"
+            target="_blank"
             className="px-6 py-3 bg-accent text-white rounded shadow hover:bg-accent/90 transition"
           >
             Download My CV
