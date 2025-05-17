@@ -12,7 +12,7 @@ export default function Home() {
           height={128}
           className="mb-5 rounded-full mx-auto"
         />
-        <h1 className="text-4xl font-bold mb-2">Hi, I'm Julien</h1>
+        <h1 className="text-4xl font-bold mb-2">Hi, I&apos;m Julien</h1>
         <h2 className='text-2xl font-semibold'>Network Administrator at RTBF</h2>
         <div className="flex mt-6 space-x-4">
           <a
@@ -38,7 +38,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-primary">About Me</h2>
           <p className="mt-4 text-lg">
-            I am a Junior Network Administrator at the RTBF, where I apply my skills in routing, switching, and infrastructure automation. Certified in CCNA and holding a Bachelor's in IT Technology, I specialize in IT infrastructure, network security, and system administration.
+            I am a Junior Network Administrator at the RTBF, where I apply my skills in routing, switching, and infrastructure automation. Certified in CCNA and holding a Bachelor&apos;s in IT Technology, I specialize in IT infrastructure, network security, and system administration.
           </p>
         </div>
       </section>
