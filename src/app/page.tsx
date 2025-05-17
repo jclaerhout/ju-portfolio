@@ -12,10 +12,8 @@ export default function Home() {
           height={128}
           className="mb-5 rounded-full mx-auto"
         />
-        <h1 className="text-4xl font-bold">Welcome to My Portfolio</h1>
-        <p className="mt-4 text-lg">
-          I am <span className="font-semibold">Julien Claerhout</span>, a certified network administrator passionate about IT infrastructure and cybersecurity.
-        </p>
+        <h1 className="text-4xl font-bold mb-2">Hi, I'm Julien</h1>
+        <h2 className='text-2xl font-semibold'>Network Administrator at RTBF</h2>
         <div className="flex mt-6 space-x-4">
           <a
             href="docs/CV.pdf"
@@ -35,16 +33,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
+      {/* About Me Section */}
       <section className="py-20 px-6 bg-gradient-to-r from-white to-gray-100">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-primary">About Me</h2>
           <p className="mt-4 text-lg">
-            I am a recent graduate in Computer Science with a solid foundation in IT acquired during my Bachelor&apos;s studies at EPHEC. Proud holder of the CCNA certification from Cisco, I specialize in networking with hands-on experience in configuring routers, switches, VLANs, and implementing network security protocols. Currently working as a Network Administrator intern at the RTBF, I am dedicated to applying and expanding my expertise in IT infrastructure.
-            Beyond networking, I have experience with Docker, Linux/Windows administration, Python scripting, web and mobile development, and virtualization technologies, making me a versatile IT professional ready to tackle complex challenges.
+            I am a Junior Network Administrator at the RTBF, where I apply my skills in routing, switching, and infrastructure automation. Certified in CCNA and holding a Bachelor's in IT Technology, I specialize in IT infrastructure, network security, and system administration.
           </p>
         </div>
       </section>
+
 
       {/* Certifications Section */}
       <section className="py-20 px-6 bg-gradient-to-r from-accent via-primary to-accent text-white">
@@ -75,6 +73,14 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-primary text-center mb-10">Career Timeline</h2>
           <div className="space-y-6">
+            <div className="flex items-start">
+              <span className="w-6 h-6 bg-accent rounded-full flex-shrink-0"></span>
+              <div className="ml-4">
+                <h3 className="text-xl font-semibold">May 2025 - Present</h3>
+                <p className="text-textDark">Started working as a Junior Network Administrator at the RTBF.</p>
+              </div>
+            </div>
+
             <div className="flex items-start">
               <span className="w-6 h-6 bg-accent rounded-full flex-shrink-0"></span>
               <div className="ml-4">
