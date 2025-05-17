@@ -5,13 +5,15 @@ export default function Home() {
     <main className="bg-gradient-to-b from-secondary via-white to-secondary text-textDark min-h-screen">
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center text-center pt-10 pb-20 bg-gradient-to-r from-primary to-accent text-white">
-        <Image
-          src="/images/profile.jpg"
-          alt="Profile photo of Julien Claerhout"
-          width={128}
-          height={128}
-          className="mb-5 rounded-full mx-auto"
-        />
+        <div className="mb-5 rounded-full mx-auto overflow-hidden w-32 h-32">
+          <Image
+            src="/images/profile.jpg"
+            alt="Profile photo of Julien Claerhout"
+            width={128}
+            height={128}
+            className="object-cover w-full h-full"
+          />
+        </div>
         <h1 className="text-4xl font-bold mb-2">Hi, I&apos;m Julien</h1>
         <h2 className='text-2xl font-semibold'>Network Administrator at RTBF</h2>
         <div className="flex mt-6 space-x-4">
